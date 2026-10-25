@@ -98,7 +98,7 @@ The default authorization token (`auth_token`), encryption key (`super_secret`),
 Add your values to `.env`:
 
 ```dotenv
-AUTH_TOKEN=replace-with-a-unique-random-token
+PG_CONSOLE_AUTHORIZATION_TOKEN=replace-with-a-unique-random-token
 PG_CONSOLE_ENCRYPTIONKEY=replace-with-a-unique-random-key
 PG_CONSOLE_DB_PASSWORD=replace-with-a-unique-random-password
 ```
@@ -109,7 +109,7 @@ Generate a separate value for each secret, for example:
 openssl rand -hex 32
 ```
 
-The supplied Compose files pass `AUTH_TOKEN` to the API and its healthcheck, `PG_CONSOLE_ENCRYPTIONKEY` to the API, and `PG_CONSOLE_DB_PASSWORD` to both the API and database container. Keep `.env` private and restrict access:
+The supplied Compose files pass `PG_CONSOLE_AUTHORIZATION_TOKEN` to the API and its healthcheck, `PG_CONSOLE_ENCRYPTIONKEY` to the API, and `PG_CONSOLE_DB_PASSWORD` to both the API and database container. Keep `.env` private and restrict access:
 
 ```sh
 chmod 600 .env
