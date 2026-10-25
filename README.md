@@ -108,7 +108,9 @@ If you find our project helpful, consider giving it a star on GitHub! Your suppo
 
 ## License
 
-Licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+The automation core and the public deployment files and documentation in this repository are licensed under the [MIT License](./LICENSE).
+
+Autobase Platform (Console) is proprietary software. Its use, including under the free Starter plan, is governed by the [Platform license](/console/LICENSE).
 
 ## Author
 
